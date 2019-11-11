@@ -32,7 +32,6 @@
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@remotemonster/sdk/remon.min.js"></script>
   <script>
-  let isConnected = false;
   let remon;
 
   const config = {
@@ -61,18 +60,11 @@
   remon = new Remon({ config, listener });
 
   $('#mystop').click(function(){
-    if (isConnected) {
-      isConnected = false;
-      remon.close();
-    }
+    remon.close();
   });
 
   $('#mystart').click(function(){
-    if (isConnected) {
-    } else {
-      isConnected = true;
-      remon.joinCast("my-first-livestreaming");
-    }
+    remon.joinCast("my-first-livestreaming");
   });
 
   </script>
