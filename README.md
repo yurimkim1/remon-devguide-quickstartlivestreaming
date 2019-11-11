@@ -3,14 +3,16 @@
 이 저장소를 fork 해주십시오. 이 화면 오른쪽 위에 Fork 버튼을 클릭하면 됩니다.
 
 Fork 후 저장소의 주소는 아래와 같습니다.
+```
 https://github.com/내 아이디/remon-devguide-quickstartlivestreaming/
+```
 
 Fork 후 저장소의 Settings에서 GitHub Pages 설정을 master branch로 선택합니다.
 설정 변경 후 아래 주소에서 방송 앱을 확인할 수 있습니다.
 [https://내 아이디.github.io/remon-devguide-quickstartlivestreaming/simplelivestreaming.html](simplelivestreaming.html)
 
 아래 주소에서 시청 앱을 확인할 수 있습니다.
-https://내 아이디.github.io/remon-devguide-quickstartlivestreaming/simplewatch.html
+[https://내 아이디.github.io/remon-devguide-quickstartlivestreaming/simplewatch.html](simplewatch.html)
 
 앱 접속 시 HTTPS 를 반드시 확인하십시오.
 
