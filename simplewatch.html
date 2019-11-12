@@ -52,7 +52,13 @@
   const listener = {
     onCreate(chid) { console.log(`EVENT FIRED: onCreate: ${chid}`); },
     onJoin(chid) { console.log(`EVENT FIRED: onJoin: ${chid}`); $('#mystart').prop( "disabled", true ); $('#mystop').prop( "disabled", false ); },
-    onClose() { console.log('EVENT FIRED: onClose'); $('#mystart').prop( "disabled", false ); $('#mystop').prop( "disabled", true ); },
+    onClose() { 
+      console.log('EVENT FIRED: onClose'); 
+      $('#mystart').prop( "disabled", false ); 
+      $('#mystop').prop( "disabled", true ); 
+      remon.close();
+      remon = new Remon({ config, listener });
+    },
     onError(error) { console.log(`EVENT FIRED: onError: ${error}`); },
     onStat(result) { console.log(`EVENT FIRED: onStat: ${result}`); }
   };
